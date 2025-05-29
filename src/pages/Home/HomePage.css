@@ -1,0 +1,87 @@
+/* FeedbackApp.css */
+
+.app {
+    border: 2px solid #f44336;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fffdf7;
+    font-family: "Segoe UI", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #e3f2fd;
+}
+
+.description h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+}
+
+.options {
+    border: 2px solid #ba68c8;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #f3e5f5;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.options button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button.good {
+    background-color: #4caf50;
+}
+button.good:hover {
+    background-color: #388e3c;
+}
+
+button.neutral {
+    background-color: #9e9e9e;
+}
+button.neutral:hover {
+    background-color: #757575;
+}
+
+button.bad {
+    background-color: #f44336;
+}
+button.bad:hover {
+    background-color: #d32f2f;
+}
+
+button.reset {
+    background-color: #607d8b;
+}
+button.reset:hover {
+    background-color: #455a64;
+}
+
+.feedback {
+    border: 2px solid #ffb74d;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fff3e0;
+}
+
+.feedback p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #444;
+}
