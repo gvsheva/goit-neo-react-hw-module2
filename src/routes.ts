@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import HomePage from "./pages/Home";
+import FeedbackPage from "./pages/Feedback";
 
 export interface RouteConfig {
     path: string;
@@ -10,7 +10,7 @@ export interface RouteConfig {
 export default [
     {
         path: "/",
-        title: "Home",
-        page: HomePage,
+        title: "Feedback",
+        page: FeedbackPage,
     },
 ] satisfies RouteConfig[];

@@ -1,0 +1,12 @@
+.description {
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #e3f2fd;
+}
+
+.description h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+}
