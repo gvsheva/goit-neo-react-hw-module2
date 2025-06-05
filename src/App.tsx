@@ -52,7 +52,10 @@ function App() {
   return (
     <div className={css.app}>
       <Description />
-      <Options onClick={(type) => handleOptionClick(type)} />
+      <Options
+        hasAnyFeedback={hasAnyFeedback}
+        onClick={(type) => handleOptionClick(type)}
+      />
       {hasAnyFeedback ? (
         <Feedback {...{ good, neutral, bad, total, positive }} />
       ) : (

@@ -3,10 +3,11 @@ import css from "./Options.module.css";
 export type OptionType = "good" | "neutral" | "bad" | "reset";
 
 export interface OptionsProps {
+  hasAnyFeedback?: boolean;
   onClick?: (type: OptionType) => void;
 }
 
-export default function Options({ onClick }: OptionsProps) {
+export default function Options({ hasAnyFeedback, onClick }: OptionsProps) {
   const handleClick = (type: OptionType) => {
     if (onClick) {
       onClick(type);
@@ -23,9 +24,11 @@ export default function Options({ onClick }: OptionsProps) {
       <button className={css.bad} onClick={() => handleClick("bad")}>
         Bad
       </button>
-      <button className={css.reset} onClick={() => handleClick("reset")}>
-        Reset
-      </button>
+      {hasAnyFeedback && (
+        <button className={css.reset} onClick={() => handleClick("reset")}>
+          Reset
+        </button>
+      )}
     </div>
   );
 }
